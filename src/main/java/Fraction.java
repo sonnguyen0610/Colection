@@ -49,8 +49,16 @@ public class Fraction {
             System.out.println("List is empty!");
         } else {
             for (Fraction fr : listFraction) {
-                System.out.print(fr);
+                System.out.print(fr.toString());
             }
+        }
+    }
+    @Override
+    public String toString() {
+        if (this._tuSo == this._mauSo) {
+            return 1 + "";
+        } else {
+            return String.format("%d/%d", this._tuSo, this._mauSo);
         }
     }
 

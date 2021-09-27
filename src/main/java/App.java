@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         do {
-            System.out.println("-------------");
+            System.out.println("\n-------------");
             System.out.println("1. Add list fraction");
             System.out.println("2. Print list");
             System.out.println("3. Add to list");
