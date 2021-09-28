@@ -20,7 +20,7 @@ public class Fraction {
 
     //Nhập ds 1 phan so
     public static void addListToList(String fra) {
-        String[] input = fra.split("\\s+");
+        String[] input = fra.split("\s+");
         for (int i = 0; i < input.length; i++) {
             String[] item = input[i].split("/");
             int tuSo = Integer.parseInt(item[0]);
@@ -50,7 +50,7 @@ public class Fraction {
             System.out.println("List is empty!");
         } else {
             for (Fraction fr : listFraction) {
-                System.out.print(fr.toString()+", ");
+                System.out.print(fr+", ");
             }
         }
     }
