@@ -9,7 +9,8 @@ public class Fraction {
      */
     private int _tuSo;
     private int _mauSo;
-    static ArrayList<Fraction> listFraction = new ArrayList<>();
+    final static int CAPACITY =50;
+    static ArrayList<Fraction> listFraction = new ArrayList<>(CAPACITY);
 
     //Nhap phan so
     public Fraction(int tuSo, int mauSo) {
@@ -49,7 +50,7 @@ public class Fraction {
             System.out.println("List is empty!");
         } else {
             for (Fraction fr : listFraction) {
-                System.out.print(fr.toString());
+                System.out.print(fr.toString()+", ");
             }
         }
     }

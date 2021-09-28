@@ -18,7 +18,7 @@ public class App {
             int choose = Integer.parseInt(sc.nextLine());
             switch (choose) {
                 case 1:
-                    System.out.print("Input your fraction have space");
+                    System.out.print("Input your fraction have space: ");
                     String listFraction = sc.nextLine();
                     Fraction.addListToList(listFraction);
                     System.out.print("Your list: ");
